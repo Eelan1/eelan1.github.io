@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title> selbstmotivierung </title>
 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehrere Seiten</title>
+
+   
     <style>
         body {
             background-color: #500050; /* خلفية بنفسجية */
@@ -44,6 +48,77 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
+
+
+ body {
+        background-color: #800080;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .section {
+        display: none;
+        padding: 20px;
+    }
+
+    .section.active {
+        display: block;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        background: white;
+        color: #800080;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 90%;          /* يجعل الزر مناسب للهاتف */
+        max-width: 300px;    /* لا يكبر كثيرًا على الكمبيوتر */
+    }
+
+    #backBtn {
+        padding: 8px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-bottom: 20px;
+        background: white;
+        color: #800080;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* للشاشات الصغيرة (الهاتف) */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
+
+    /* للشاشات المتوسطة (تابلت) */
+    @media (min-width: 601px) and (max-width: 1024px) {
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    /* للشاشات الكبيرة (كمبيوتر) */
+    @media (min-width: 1025px) {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+
+
     </style>
 
     <script>
